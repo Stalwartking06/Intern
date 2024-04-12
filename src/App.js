@@ -1,17 +1,19 @@
-import React from 'react'
-import Nanna from './Nanna'
-import Routing from './Routing'
-import Mama from './Mama'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NewAPI from './NewAPI';
+import PP from './PP';
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <Nanna></Nanna>
-      <Routing></Routing>
-      <Mama></Mama>
-    </div>
-  )  
+    <Router>
+      <Routes>
+        <Route path="/" element={<NewAPI />} />
+        <Route path="/item" element={<PP />} />
+
+        {/* Other routes can be defined here */}
+      </Routes>
+    </Router>
+  );
 }
 
-
-
+export default App;

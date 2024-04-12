@@ -10,7 +10,7 @@ export default function Nanna() {
         <Container>
           <Navbar.Brand href="#home">Sir Ki Dukaan</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="">All</Nav.Link>
+            <Nav.Link href="/">All</Nav.Link>
             <Nav.Link href="/bappilehari">Jewelery</Nav.Link>
             <Nav.Link href="/electronic">Electronic</Nav.Link>
             <Nav.Link href="/aadmikakapda">Men's Clothing</Nav.Link>

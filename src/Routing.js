@@ -7,6 +7,8 @@ import MCloth from './MCloth'
 import WCloth from './WCloth'
 import Electromics from './Electromics'
 import PostProduct from './PostProduct'
+import NewAPI from './NewAPI'
+import PP from './PP'
 
 
 
@@ -16,12 +18,13 @@ export default function Routing() {
       <BrowserRouter>
       {/* <Nav></Nav><br/> */}
             <Routes>
-            <Route path='/' element={<GetApi></GetApi>}></Route>
-            <Route path='/electronic' element={<Electromics></Electromics>}></Route>
+            <Route path='/' element={<NewAPI></NewAPI>}></Route>
             <Route path='/bappilehari' element={<ProductCart></ProductCart>}></Route>
+            <Route path='/electronic' element={<Electromics></Electromics>}></Route>
             <Route path='/aadmikakapda' element={<MCloth></MCloth>}></Route>
             <Route path='/auratlogokakapda' element={<WCloth></WCloth>}></Route>
             <Route path='/postItem' element={<PostProduct></PostProduct>}></Route>
+            <Route path='/item' element={<PP></PP>}></Route>
 
           </Routes>
       </BrowserRouter>

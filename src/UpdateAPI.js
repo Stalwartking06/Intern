@@ -17,7 +17,7 @@ function UpdateAPI()
          const data={id,rollno,name,marks}
          console.log(rollno,name,marks)
 
-         fetch("http://localhost:3000/posts/"+id,{
+         fetch("http://localhost:3002/posts/"+id,{
             method:"PUT",
             headers:{
                 "Accept":"application/json",
